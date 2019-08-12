@@ -1,5 +1,5 @@
 .class Lorg/pixelexperience/screenshot/LongshotService$ServiceBinder;
-.super Lcom/oneplus/longshot/LongScreenshotService;
+.super Lcom/android/internal/custom/longshot/LongScreenshotService;
 .source "LongshotService.java"
 
 
@@ -31,7 +31,7 @@
     iput-object p1, p0, Lorg/pixelexperience/screenshot/LongshotService$ServiceBinder;->this$0:Lorg/pixelexperience/screenshot/LongshotService;
 
     .line 78
-    invoke-direct {p0, p2, p3, p4}, Lcom/oneplus/longshot/LongScreenshotService;-><init>(Landroid/content/Context;ZZ)V
+    invoke-direct {p0, p2, p3, p4}, Lcom/android/internal/custom/longshot/LongScreenshotService;-><init>(Landroid/content/Context;ZZ)V
 
     .line 79
     iput-object p2, p0, Lorg/pixelexperience/screenshot/LongshotService$ServiceBinder;->mContext:Landroid/content/Context;
@@ -183,9 +183,9 @@
     return-void
 .end method
 
-.method public start(Lcom/oneplus/longshot/ILongScreenshotCallback;)V
+.method public start(Lcom/android/internal/custom/longshot/ILongScreenshotCallback;)V
     .locals 4
-    .param p1, "callback"    # Lcom/oneplus/longshot/ILongScreenshotCallback;
+    .param p1, "callback"    # Lcom/android/internal/custom/longshot/ILongScreenshotCallback;
 
     .line 84
     invoke-static {}, Lorg/pixelexperience/screenshot/LongshotService;->access$000()Ljava/lang/String;
@@ -201,7 +201,7 @@
 
     iget-object v1, p0, Lorg/pixelexperience/screenshot/LongshotService$ServiceBinder;->this$0:Lorg/pixelexperience/screenshot/LongshotService;
 
-    invoke-direct {v0, v1, p1}, Lorg/pixelexperience/screenshot/LongshotService$Finisher;-><init>(Lorg/pixelexperience/screenshot/LongshotService;Lcom/oneplus/longshot/ILongScreenshotCallback;)V
+    invoke-direct {v0, v1, p1}, Lorg/pixelexperience/screenshot/LongshotService$Finisher;-><init>(Lorg/pixelexperience/screenshot/LongshotService;Lcom/android/internal/custom/longshot/ILongScreenshotCallback;)V
 
     .line 87
     .local v0, "finisher":Ljava/lang/Runnable;
@@ -215,7 +215,7 @@
 
     iget-boolean v3, p0, Lorg/pixelexperience/screenshot/LongshotService$ServiceBinder;->mNavBarVisible:Z
 
-    invoke-virtual {v1, v0, p1, v2, v3}, Lorg/pixelexperience/screenshot/longshot/state/LongshotMode;->start(Ljava/lang/Runnable;Lcom/oneplus/longshot/ILongScreenshotCallback;ZZ)V
+    invoke-virtual {v1, v0, p1, v2, v3}, Lorg/pixelexperience/screenshot/longshot/state/LongshotMode;->start(Ljava/lang/Runnable;Lcom/android/internal/custom/longshot/ILongScreenshotCallback;ZZ)V
 
     .line 88
     return-void
