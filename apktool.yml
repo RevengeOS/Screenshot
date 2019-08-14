@@ -1,0 +1,41 @@
+!!brut.androlib.meta.MetaInfo
+apkFileName: OPLongshot.apk
+compressionType: false
+doNotCompress:
+- arsc
+- png
+- res/drawable-hdpi-960x540-v4/guide_main_bg.9.png
+- res/drawable-hdpi-960x540-v4/screenshot_notif_bg.9.png
+- res/drawable-hdpi-960x540-v4/screenshot_notif_bg_big.9.png
+- res/drawable-hdpi-v4/guide_main_bg.9.png
+- res/drawable-hdpi-v4/screenshot_notif_bg.9.png
+- res/drawable-hdpi-v4/screenshot_notif_bg_big.9.png
+- res/drawable-nodpi-v4/screenshot_panel.9.png
+- res/drawable-xhdpi-v4/guide_main_bg.9.png
+- res/drawable-xhdpi-v4/screenshot_notif_bg.9.png
+- res/drawable-xhdpi-v4/screenshot_notif_bg_big.9.png
+- res/drawable-xxhdpi-v4/guide_main_bg.9.png
+- res/drawable-xxhdpi-v4/screenshot_notif_bg.9.png
+- res/drawable-xxhdpi-v4/screenshot_notif_bg_big.9.png
+- res/drawable-xxxhdpi-v4/guide_main_bg.9.png
+- res/drawable-xxxhdpi-v4/screenshot_notif_bg.9.png
+- res/drawable-xxxhdpi-v4/screenshot_notif_bg_big.9.png
+isFrameworkApk: false
+packageInfo:
+  forcedPackageId: '127'
+  renameManifestPackage: null
+sdkInfo:
+  minSdkVersion: '24'
+  targetSdkVersion: '24'
+sharedLibrary: false
+sparseResources: false
+unknownFiles:
+  manifest: '8'
+usesFramework:
+  ids:
+  - 1
+  tag: null
+version: 2.4.0
+versionInfo:
+  versionCode: '1'
+  versionName: 1.1.0

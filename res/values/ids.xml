@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="notification_screenshot" />
+    <item type="id" name="notify_hint" />
+    <item type="id" name="hint_message_2" />
+    <item type="id" name="global_screenshot_layout" />
+    <item type="id" name="global_screenshot_background" />
+    <item type="id" name="global_screenshot" />
+    <item type="id" name="global_screenshot_flash" />
+    <item type="id" name="global_screenshot_selector" />
+    <item type="id" name="global_screenshot_footer" />
+    <item type="id" name="global_screenshot_ic_share" />
+    <item type="id" name="global_screenshot_ic_edit" />
+    <item type="id" name="global_screenshot_ic_longshot" />
+    <item type="id" name="global_screenshot_ic_delete" />
+    <item type="id" name="longshot_guider_host" />
+    <item type="id" name="longshot_guide_text" />
+    <item type="id" name="longshot_guide_button" />
+    <item type="id" name="layout" />
+    <item type="id" name="status_bar_layout" />
+    <item type="id" name="icon" />
+    <item type="id" name="line_1" />
+    <item type="id" name="line_2" />
+    <item type="id" name="layout_shared" />
+    <item type="id" name="icon_shared" />
+    <item type="id" name="layout_delete" />
+    <item type="id" name="icon_delete" />
+    <item type="id" name="layout_edit" />
+    <item type="id" name="icon_edit" />
+    <item type="id" name="status_bar_layout_big" />
+    <item type="id" name="icon_big" />
+    <item type="id" name="line_1_big" />
+    <item type="id" name="line_2_big" />
+    <item type="id" name="layout_shared_big" />
+    <item type="id" name="icon_shared_big" />
+    <item type="id" name="shared_big" />
+    <item type="id" name="layout_delete_big" />
+    <item type="id" name="icon_delete_big" />
+    <item type="id" name="delete_big" />
+    <item type="id" name="layout_edit_big" />
+    <item type="id" name="icon_edit_big" />
+    <item type="id" name="edit_big" />
+    <item type="id" name="image" />
+</resources>
