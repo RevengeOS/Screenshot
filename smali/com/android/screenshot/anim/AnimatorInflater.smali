@@ -317,20 +317,20 @@
     .end packed-switch
 .end method
 
-.method private static createAnimatorFromXml(Landroid/content/Context;Lcom/xmlpull/v1/XmlPullParser;Lcom/android/screenshot/anim/TargetAnimator$ViewLoader;)Landroid/animation/Animator;
+.method private static createAnimatorFromXml(Landroid/content/Context;Lorg/xmlpull/v1/XmlPullParser;Lcom/android/screenshot/anim/TargetAnimator$ViewLoader;)Landroid/animation/Animator;
     .locals 6
     .param p0, "c"    # Landroid/content/Context;
-    .param p1, "parser"    # Lcom/xmlpull/v1/XmlPullParser;
+    .param p1, "parser"    # Lorg/xmlpull/v1/XmlPullParser;
     .param p2, "loader"    # Lcom/android/screenshot/anim/TargetAnimator$ViewLoader;
     .annotation system Ldalvik/annotation/Throws;
         value = {
-            Lcom/xmlpull/v1/XmlPullParserException;,
+            Lorg/xmlpull/v1/XmlPullParserException;,
             Ljava/io/IOException;
         }
     .end annotation
 
     .line 105
-    invoke-static {p1}, Landroid/util/Xml;->asAttributeSet(Lcom/xmlpull/v1/XmlPullParser;)Landroid/util/AttributeSet;
+    invoke-static {p1}, Landroid/util/Xml;->asAttributeSet(Lorg/xmlpull/v1/XmlPullParser;)Landroid/util/AttributeSet;
 
     move-result-object v3
 
@@ -344,24 +344,24 @@
 
     move-object v2, p2
 
-    invoke-static/range {v0 .. v5}, Lcom/android/screenshot/anim/AnimatorInflater;->createAnimatorFromXml(Landroid/content/Context;Lcom/xmlpull/v1/XmlPullParser;Lcom/android/screenshot/anim/TargetAnimator$ViewLoader;Landroid/util/AttributeSet;Landroid/animation/AnimatorSet;I)Landroid/animation/Animator;
+    invoke-static/range {v0 .. v5}, Lcom/android/screenshot/anim/AnimatorInflater;->createAnimatorFromXml(Landroid/content/Context;Lorg/xmlpull/v1/XmlPullParser;Lcom/android/screenshot/anim/TargetAnimator$ViewLoader;Landroid/util/AttributeSet;Landroid/animation/AnimatorSet;I)Landroid/animation/Animator;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method private static createAnimatorFromXml(Landroid/content/Context;Lcom/xmlpull/v1/XmlPullParser;Lcom/android/screenshot/anim/TargetAnimator$ViewLoader;Landroid/util/AttributeSet;Landroid/animation/AnimatorSet;I)Landroid/animation/Animator;
+.method private static createAnimatorFromXml(Landroid/content/Context;Lorg/xmlpull/v1/XmlPullParser;Lcom/android/screenshot/anim/TargetAnimator$ViewLoader;Landroid/util/AttributeSet;Landroid/animation/AnimatorSet;I)Landroid/animation/Animator;
     .locals 16
     .param p0, "c"    # Landroid/content/Context;
-    .param p1, "parser"    # Lcom/xmlpull/v1/XmlPullParser;
+    .param p1, "parser"    # Lorg/xmlpull/v1/XmlPullParser;
     .param p2, "loader"    # Lcom/android/screenshot/anim/TargetAnimator$ViewLoader;
     .param p3, "attrs"    # Landroid/util/AttributeSet;
     .param p4, "parent"    # Landroid/animation/AnimatorSet;
     .param p5, "sequenceOrdering"    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
-            Lcom/xmlpull/v1/XmlPullParserException;,
+            Lorg/xmlpull/v1/XmlPullParserException;,
             Ljava/io/IOException;
         }
     .end annotation
@@ -381,7 +381,7 @@
 
     .line 117
     .local v1, "childAnims":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Landroid/animation/Animator;>;"
-    invoke-interface/range {p1 .. p1}, Lcom/xmlpull/v1/XmlPullParser;->getDepth()I
+    invoke-interface/range {p1 .. p1}, Lorg/xmlpull/v1/XmlPullParser;->getDepth()I
 
     move-result v2
 
@@ -396,7 +396,7 @@
     .line 119
     .end local v2    # "depth":I
     .local v10, "depth":I
-    invoke-interface/range {p1 .. p1}, Lcom/xmlpull/v1/XmlPullParser;->next()I
+    invoke-interface/range {p1 .. p1}, Lorg/xmlpull/v1/XmlPullParser;->next()I
 
     move-result v1
 
@@ -407,7 +407,7 @@
 
     if-ne v1, v2, :cond_1
 
-    invoke-interface/range {p1 .. p1}, Lcom/xmlpull/v1/XmlPullParser;->getDepth()I
+    invoke-interface/range {p1 .. p1}, Lorg/xmlpull/v1/XmlPullParser;->getDepth()I
 
     move-result v1
 
@@ -443,7 +443,7 @@
 
     .line 126
     :cond_2
-    invoke-interface/range {p1 .. p1}, Lcom/xmlpull/v1/XmlPullParser;->getName()Ljava/lang/String;
+    invoke-interface/range {p1 .. p1}, Lorg/xmlpull/v1/XmlPullParser;->getName()Ljava/lang/String;
 
     move-result-object v12
 
@@ -537,7 +537,7 @@
 
     move v5, v15
 
-    invoke-static/range {v0 .. v5}, Lcom/android/screenshot/anim/AnimatorInflater;->createAnimatorFromXml(Landroid/content/Context;Lcom/xmlpull/v1/XmlPullParser;Lcom/android/screenshot/anim/TargetAnimator$ViewLoader;Landroid/util/AttributeSet;Landroid/animation/AnimatorSet;I)Landroid/animation/Animator;
+    invoke-static/range {v0 .. v5}, Lcom/android/screenshot/anim/AnimatorInflater;->createAnimatorFromXml(Landroid/content/Context;Lorg/xmlpull/v1/XmlPullParser;Lcom/android/screenshot/anim/TargetAnimator$ViewLoader;Landroid/util/AttributeSet;Landroid/animation/AnimatorSet;I)Landroid/animation/Animator;
 
     .line 140
     invoke-virtual {v14}, Landroid/content/res/TypedArray;->recycle()V
@@ -645,7 +645,7 @@
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-interface/range {p1 .. p1}, Lcom/xmlpull/v1/XmlPullParser;->getName()Ljava/lang/String;
+    invoke-interface/range {p1 .. p1}, Lorg/xmlpull/v1/XmlPullParser;->getName()Ljava/lang/String;
 
     move-result-object v4
 
@@ -931,11 +931,11 @@
     move-object v0, v1
 
     .line 84
-    invoke-static {p0, v0, p2}, Lcom/android/screenshot/anim/AnimatorInflater;->createAnimatorFromXml(Landroid/content/Context;Lcom/xmlpull/v1/XmlPullParser;Lcom/android/screenshot/anim/TargetAnimator$ViewLoader;)Landroid/animation/Animator;
+    invoke-static {p0, v0, p2}, Lcom/android/screenshot/anim/AnimatorInflater;->createAnimatorFromXml(Landroid/content/Context;Lorg/xmlpull/v1/XmlPullParser;Lcom/android/screenshot/anim/TargetAnimator$ViewLoader;)Landroid/animation/Animator;
 
     move-result-object v1
     :try_end_0
-    .catch Lcom/xmlpull/v1/XmlPullParserException; {:try_start_0 .. :try_end_0} :catch_1
+    .catch Lorg/xmlpull/v1/XmlPullParserException; {:try_start_0 .. :try_end_0} :catch_1
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -998,7 +998,7 @@
     move-exception v1
 
     .line 86
-    .local v1, "ex":Lcom/xmlpull/v1/XmlPullParserException;
+    .local v1, "ex":Lorg/xmlpull/v1/XmlPullParserException;
     new-instance v2, Landroid/content/res/Resources$NotFoundException;
 
     new-instance v3, Ljava/lang/StringBuilder;
@@ -1032,7 +1032,7 @@
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     .line 98
-    .end local v1    # "ex":Lcom/xmlpull/v1/XmlPullParserException;
+    .end local v1    # "ex":Lorg/xmlpull/v1/XmlPullParserException;
     .end local v2    # "rnf":Landroid/content/res/Resources$NotFoundException;
     :goto_0
     if-eqz v0, :cond_1

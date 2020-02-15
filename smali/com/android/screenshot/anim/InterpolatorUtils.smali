@@ -17,13 +17,13 @@
     return-void
 .end method
 
-.method private static createInterpolatorFromXml(Landroid/content/Context;Lcom/xmlpull/v1/XmlPullParser;)Landroid/view/animation/Interpolator;
+.method private static createInterpolatorFromXml(Landroid/content/Context;Lorg/xmlpull/v1/XmlPullParser;)Landroid/view/animation/Interpolator;
     .locals 6
     .param p0, "c"    # Landroid/content/Context;
-    .param p1, "parser"    # Lcom/xmlpull/v1/XmlPullParser;
+    .param p1, "parser"    # Lorg/xmlpull/v1/XmlPullParser;
     .annotation system Ldalvik/annotation/Throws;
         value = {
-            Lcom/xmlpull/v1/XmlPullParserException;,
+            Lorg/xmlpull/v1/XmlPullParserException;,
             Ljava/io/IOException;
         }
     .end annotation
@@ -33,14 +33,14 @@
 
     .line 69
     .local v0, "interpolator":Landroid/view/animation/Interpolator;
-    invoke-interface {p1}, Lcom/xmlpull/v1/XmlPullParser;->getDepth()I
+    invoke-interface {p1}, Lorg/xmlpull/v1/XmlPullParser;->getDepth()I
 
     move-result v1
 
     .line 71
     .local v1, "depth":I
     :goto_0
-    invoke-interface {p1}, Lcom/xmlpull/v1/XmlPullParser;->next()I
+    invoke-interface {p1}, Lorg/xmlpull/v1/XmlPullParser;->next()I
 
     move-result v2
 
@@ -51,7 +51,7 @@
 
     if-ne v2, v4, :cond_0
 
-    invoke-interface {p1}, Lcom/xmlpull/v1/XmlPullParser;->getDepth()I
+    invoke-interface {p1}, Lorg/xmlpull/v1/XmlPullParser;->getDepth()I
 
     move-result v2
 
@@ -72,13 +72,13 @@
 
     .line 78
     :cond_1
-    invoke-static {p1}, Landroid/util/Xml;->asAttributeSet(Lcom/xmlpull/v1/XmlPullParser;)Landroid/util/AttributeSet;
+    invoke-static {p1}, Landroid/util/Xml;->asAttributeSet(Lorg/xmlpull/v1/XmlPullParser;)Landroid/util/AttributeSet;
 
     move-result-object v2
 
     .line 80
     .local v2, "attrs":Landroid/util/AttributeSet;
-    invoke-interface {p1}, Lcom/xmlpull/v1/XmlPullParser;->getName()Ljava/lang/String;
+    invoke-interface {p1}, Lorg/xmlpull/v1/XmlPullParser;->getName()Ljava/lang/String;
 
     move-result-object v4
 
@@ -214,7 +214,7 @@
     move-object v0, v1
 
     .line 37
-    invoke-static {p0, v0}, Lcom/android/screenshot/anim/InterpolatorUtils;->createInterpolatorFromXml(Landroid/content/Context;Lcom/xmlpull/v1/XmlPullParser;)Landroid/view/animation/Interpolator;
+    invoke-static {p0, v0}, Lcom/android/screenshot/anim/InterpolatorUtils;->createInterpolatorFromXml(Landroid/content/Context;Lorg/xmlpull/v1/XmlPullParser;)Landroid/view/animation/Interpolator;
 
     move-result-object v1
 
@@ -227,7 +227,7 @@
 
     move-result-object v2
     :try_end_0
-    .catch Lcom/xmlpull/v1/XmlPullParserException; {:try_start_0 .. :try_end_0} :catch_1
+    .catch Lorg/xmlpull/v1/XmlPullParserException; {:try_start_0 .. :try_end_0} :catch_1
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -298,7 +298,7 @@
     move-exception v1
 
     .line 43
-    .local v1, "ex":Lcom/xmlpull/v1/XmlPullParserException;
+    .local v1, "ex":Lorg/xmlpull/v1/XmlPullParserException;
     new-instance v2, Landroid/content/res/Resources$NotFoundException;
 
     new-instance v3, Ljava/lang/StringBuilder;
@@ -332,7 +332,7 @@
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     .line 53
-    .end local v1    # "ex":Lcom/xmlpull/v1/XmlPullParserException;
+    .end local v1    # "ex":Lorg/xmlpull/v1/XmlPullParserException;
     .end local v2    # "rnf":Landroid/content/res/Resources$NotFoundException;
     :goto_0
     if-eqz v0, :cond_2
