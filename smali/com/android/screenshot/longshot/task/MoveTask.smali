@@ -478,13 +478,9 @@
 
     const/4 v3, 0x0
 
-    const v4, 0xf4240
+    const/4 v4, 0x0
 
-    const/4 v5, 0x0
-
-    const/4 v6, 0x0
-
-    invoke-static/range {v0 .. v6}, Landroid/view/SurfaceControl;->screenshot(Landroid/graphics/Rect;IIIIZI)Landroid/graphics/Bitmap;
+    invoke-static/range {v0 .. v4}, Landroid/view/SurfaceControl;->screenshot(Landroid/graphics/Rect;IIZI)Landroid/graphics/Bitmap;
 
     move-result-object v0
 
